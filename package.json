@@ -1,8 +1,8 @@
 {
-  "name": "dms",
+  "name": "{{name}}",
   "version": "4.4.0",
   "description": "",
-  "author": "",
+  "author": "bl-front",
   "scripts": {
     "dev": "vue-cli-service serve",
     "localtest": "vue-cli-service serve --mode localtest",

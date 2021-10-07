@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '需求管理系统',
+  title: '{{ title }}',
 
   /**
    * @type {boolean} true | false
@@ -13,8 +13,8 @@ module.exports = {
    * @description Whether show the logo in sidebar
    */
   sidebarLogo: true,
-  name: 'DMS',
-  systemId: '',
+  name: '{{ name }}',
+  systemId: '{{ systemId }}',
   redirect: {
     'development': 'https://dev-bl-sc-uwp.digi800.com/#',
     'test': 'https://bl-sc-uwp-t-1.digi800.com/#',
