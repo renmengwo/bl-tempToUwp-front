@@ -1,0 +1,155 @@
+{
+  "code": 200,
+  "data": [{
+    "goodsId": 12444111,
+    "repertoryDate": "09-04",
+    "stocks": 440,
+    "skuRepertoryList": [{
+      "goodsSizeId": 12444111,
+      "size": "M",
+      "stocks": 110
+    },{
+      "goodsSizeId": 12444111,
+      "size": "S",
+      "stocks": 110
+    },{
+      "goodsSizeId": 12444111,
+      "size": "L",
+      "stocks": 110
+    },{
+      "goodsSizeId": 12444111,
+      "size": "XL",
+      "stocks": 110
+    },{
+      "goodsSizeId": 12444111,
+      "size": "SM",
+      "stocks": 0
+    },{
+      "goodsSizeId": 12444111,
+      "size": "SIZE",
+      "stocks": 0
+    }]
+  },
+    {
+      "goodsId": 12444111,
+      "repertoryDate": "09-05",
+      "stocks": 540,
+      "skuRepertoryList":  [{
+        "goodsSizeId": 12444111,
+        "size": "M",
+        "stocks": 310
+      },{
+        "goodsSizeId": 12444111,
+        "size": "S",
+        "stocks": 120
+      },{
+        "goodsSizeId": 12444111,
+        "size": "L",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "XL",
+        "stocks": 110
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SM",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SIZE",
+        "stocks": 0
+      }]
+    },
+    {
+      "goodsId": 12444111,
+      "repertoryDate": "09-07",
+      "stocks": 610,
+      "skuRepertoryList":  [{
+        "goodsSizeId": 12444111,
+        "size": "M",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "S",
+        "stocks": 410
+      },{
+        "goodsSizeId": 12444111,
+        "size": "L",
+        "stocks": 190
+      },{
+        "goodsSizeId": 12444111,
+        "size": "XL",
+        "stocks": 10
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SM",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SIZE",
+        "stocks": 0
+      }]
+    },
+    {
+      "goodsId": 12444111,
+      "repertoryDate": "09-08",
+      "stocks": 600,
+      "skuRepertoryList":  [{
+        "goodsSizeId": 12444111,
+        "size": "M",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "S",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "L",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "XL",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SM",
+        "stocks": 110
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SIZE",
+        "stocks": 490
+      }]
+    },
+    {
+      "goodsId": 12444111,
+      "repertoryDate": "09-09",
+      "stocks": 840,
+      "skuRepertoryList": [{
+        "goodsSizeId": 12444111,
+        "size": "M",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "S",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "L",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "XL",
+        "stocks": 840
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SM",
+        "stocks": 0
+      },{
+        "goodsSizeId": 12444111,
+        "size": "SIZE",
+        "stocks": 0
+      }]
+    }]
+}
+
+

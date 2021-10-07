@@ -1,0 +1,151 @@
+@import '../styles/transition';
+@import '../styles/element-ui';
+@import '../styles/sidebar';
+
+body{font:12px/1.5 "Microsoft yahei",Tahoma,Arial,Helvetica,sans-serif;word-break:break-all;word-wrap:break-word;margin:0 auto;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,td,th{margin:0;padding:0;}ul,ol,input{margin:0;padding:0;}li{list-style: none;}
+img{border:none;vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+textarea{resize:none;}
+button,input,textarea{font-family:"Microsoft yahei",Tahoma,Arial,Helvetica,sans-serif;vertical-align:middle;}
+input:focus{outline:none;}
+a{color: #333; text-decoration: none;cursor: pointer;}
+.clearDiv{clear:both;height:0;font-size:0; overflow: hidden;}
+.clearboth{clear:both; height:2px; overflow:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  background:#f9f9f9
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.c-p {
+  cursor: pointer;
+}
+
+// 生成1-200的margin - padding
+/*
+* @return m-方向首字母-数值
+* @return p-方向首字母-数值
+*/
+@for $i from 1 through 200 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+  .p-#{$i} {
+     padding: #{$i}px;
+   }
+  @each $classDirect,$classValue in $direction{
+    .m-#{$classDirect}-#{$i} {
+      margin-#{$classValue}: #{$i}px;
+    }
+    .p-#{$classDirect}-#{$i} {
+      padding-#{$classValue}: #{$i}px;
+    }
+  }
+}
+/*
+* 生成text-align
+* @return t-方向首字母
+*/
+@each $textDirect,$textValue in $text-direction{
+  .t-#{$textDirect} {
+    text-align:#{$textValue}
+  }
+}
+
+.bg-containt{
+  background:#fff;
+}
+.set-name{
+  text-align:right;
+  padding-right: 10px;
+  line-height:40px;
+  width:130px;
+  @include classFontsize(#333, $middle)
+}
+.seach-box{
+  display: flex;
+  flex-direction: row;
+  //自动换行
+  flex-wrap: wrap;
+  //清除上下行的中间空隙
+  align-content: flex-start;
+}
+.seach-public{
+  flex: 0 0 350px;
+  @extend .seach-box;
+  &>div{
+    width:calc(100% - 130px)
+  }
+}
+.seach-item{
+  @extend .seach-public;
+  margin-bottom: 15px;
+}
+.color-reject{color:$red}
+
+/*
+* 新版样式布局
+*/
+
+.form-seach{
+  @extend .seach-public;
+}
