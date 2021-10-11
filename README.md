@@ -47,3 +47,4 @@
 ## utils
 >  - uploadResponse.js设置了上传文件后如果需要返回错误提示的excle文件方法
 > - veeValidate.js一款校验插件，可以自定义校验方法，具体使用可查看百度方法
+> - originFrom.js设置了从其他系统跳转进来的时候，在链接带有token时，将token存到本地并直接跳过登录操作这一步
