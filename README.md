@@ -19,11 +19,13 @@
 > - 直接访问'/test'链接，可查看具体实例
 > - 支持自定义组件，但是该自定义的表单需要实现v-model的双向绑定
 > - 支持下拉数据异步请求获取
+> - 其中rule字段是配置规则使用，可通过改变this指向的方式，抽取一个js文件专门配置字段规则，具体实例请点击下面链接
 > - [具体实例页面请点击此处](./src/views/formTemplate/index.vue)
 > - [表单自动化插件官方文档](http://www.form-create.com/v2/guide/#%E4%B8%8B%E8%BD%BD)
 > - 个人建议请使用<font color='red'>formCreate.maker</font>的方式来创建表单，可保证页面整体的布局和UI展示。已将展开收起、页面布局和自动化生成表单封装成组件，
 ## echarts图表
 > - 已将echarts单独封装成一个组件
+> - 当页面存在多个echarts时，需要给每个echarts定义一个id,可通过改变this指向的方式，抽取一个js文件专门配置字段规则，具体实例请点击下面链接
 > - [具体实例页面请点击此处](./src/views/trendChart/index.vue)
 > - [可配置的参数可查看该页面](./src/components/echarts/index.vue)
 ## Scss
@@ -31,8 +33,9 @@
 > - index.scss已动态生成padding，margin，text-align，使用前请先阅读
 > - 字号目前只设定了三种大小，12、16、22，使用方法调用_mixin的classFontsize方法，不写字号默认走12，需要写字号请从_variables.scss的变量选择三种值
 ## Menu
-> 菜单目前是通过前端的处理路由表生成的，新建菜单只需在对应模块的路由表里面添加路由即可
-> 通过后台返回的菜单然后结合前端生成用户路由表展示并配置权限
+> - 菜单目前是通过前端的处理路由表生成的，新建菜单只需在对应模块的路由表里面添加路由即可
+> - 通过后台返回的菜单然后结合前端生成用户路由表展示并配置权限
+> - 会根据settings.js里面的systemId是否有值来作为划分。如果有值，会根据后台返回的菜单列表来展示（会将后台返回的menuName重新赋值给meta.title），如果没值，会根据前端的全部路由表来展示。同时，可配置字段children字段来循环子集
 ## Axios
 > 目前只对axios的几个请求方法进行了简单地封装，具体使用可看api文件下的例子
 ## Lodash
